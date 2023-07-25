@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spacebattle</title>
+    <style>
+        #meu_canvas {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="meu_canvas" width="400" height="400">
+        Seu navegador não suporta o Canvas do HTML5.<br>
+        Procure atualiza-lo.
+    </canvas>
+    <script>
+        var canvas = document.getElementById('meu_canvas')
+        var context = canvas.getContext('2d')
+   
+        var imagem = new Image()
+        imagem.src = 'pro.jpg'
+    </script>
+</body>
+</html>

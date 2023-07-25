@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spacebattle</title>
+    <style>
+        #meu_canvas {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="meu_canvas" width="400" height="400">
+        Seu navegador não suporta o Canvas do HTML5.<br>
+        Procure atualiza-lo.
+    </canvas>
+    <script>
+        var canvas = document.getElementById('meu_canvas')
+        var context = canvas.getContext('2d')
+
+        context.fillStyle = 'gray'
+        context.strokeStyle = 'black'
+        context.lineWidth = 2
+
+        context.beginPath()
+
+        context.arc(50, 50, 40, 90*Math.PI/180, 270*Math.PI/180, false)
+
+        context.stroke()
+        context.fill()
+
+        context.beginPath()
+        context.arc(150, 50, 40, 90*Math.PI/180, 270*Math.PI/180, true)
+
+        context.fill()
+        context.stroke()
+
+        context.beginPath()
+        context.arc(250, 50, 40, 0, 2*Math.PI)
+        context.fill()
+        context.stroke()
+
+      
+    </script>
+</body>
+</html>
