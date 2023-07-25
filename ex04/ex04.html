@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <canvas id="meu_canvas" width="400" height="400">
+    <canvas id="meu_canvas" width="500" height="100">
         Seu navegador não suporta o Canvas do HTML5.<br>
         Procure atualiza-lo.
     </canvas>
@@ -21,7 +21,10 @@
         var context = canvas.getContext('2d')
    
         var imagem = new Image()
-        imagem.src = 'pro.jpg'
+        imagem.src = 'ovni.png'
+        imagem.onload = function (){
+            
+        }
     </script>
 </body>
 </html>
