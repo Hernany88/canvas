@@ -1,4 +1,5 @@
-function Animacao(){
+function Animacao(context){
+    this.context = context
     this.sprites = []
     this.ligado = false
 }
@@ -39,5 +40,11 @@ Animacao.prototype = {
         requestAnimationFrame(function(){
             animacao.proximoFrame()
         })
+    },
+
+    limparTela: function(){
+        var ctx = this.context //Só para facilitar a escrita
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
     }
+
 }

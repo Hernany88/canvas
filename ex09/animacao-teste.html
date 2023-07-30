@@ -14,7 +14,7 @@
         var context = canvas.getContext('2d')
 
         //Criando alguns sprites
-        var b1 = new Bola(Context)
+        var b1 = new Bola(context)
         b1.x = 100
         b1.y = 200
         b1.velocidadeX = 20
@@ -31,12 +31,14 @@
         b2.raio = 30
 
         //Criando o loop de animação
-        var animacao = new Animacao()
+        var animacao = new Animacao(context)
         animacao.novoSprite(b1)
         animacao.novoSprite(b2)
 
         // "Ligar" a animação
         animacao.ligar()
+
+        animacao.desligar()
     </script>
 </body>
 </html>
