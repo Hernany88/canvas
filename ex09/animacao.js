@@ -8,6 +8,7 @@ Animacao.prototype = {
     novoSprite: function(sprite){
         this.sprites.push(sprite)
     },
+
     ligar: function(){
         this.ligado = true
         this.proximoFrame()
@@ -29,7 +30,7 @@ Animacao.prototype = {
 
         //Atualizamos o estado dos sprite
         for(var i in this.sprites)
-        this.sprites[i].atualizar
+        this.sprites[i].atualizar()
 
         //Desenhamos os sprites
         for(var i in this.sprites)
